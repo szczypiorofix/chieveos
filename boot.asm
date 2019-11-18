@@ -1,7 +1,7 @@
-bits 16 ;
-org 0x7c00 ;
+bits 16
+org 0x7c00
 
-jmp main ;
+jmp main
 
 MessageA db "////////// CHIEVE OS ver. 0.5.0 \\\\\\\\\\", 0Dh, 0Ah, 0x0
 
@@ -73,11 +73,12 @@ main:
     mov si, MessageC
     call Println
 
+
     ; call PrintNwl
     ; call PrintNwl
 
     call Reboot
 
     times 510 - ($-$$) db 0 ; Fill the rest of bootloader with 0's
-    dw 0xAA55 ; Boot signatur
+    dw 0xAA55 ; Boot signature
 
