@@ -1,5 +1,7 @@
 # chieveos
-Just a simple bootloader, made with NASM
+Just a simple bootloader, made with NASM.
+
+
 
 ## Usage
 
